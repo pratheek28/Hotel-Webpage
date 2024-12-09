@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <h1> Welcome! </h1>
+
+            <a>
+                <button class="button login__submit" onclick="window.location.href='/login'" id="login" style="font-size: 20px; border-radius: 15px">
+                    Login
+                </button>
+            </a>
+
+            <a>
+                <button class="button login__submit" onclick="window.location.href='/signup'" id="sign_up" style="font-size: 20px; border-radius: 15px">
+                    Sign Up
+                </button>
+            </a>
+        </div>
+<!--        <div class="screen__background">-->
+<!--			<span class="screen__background__shape screen__background__shape4"></span>-->
+<!--			<span class="screen__background__shape screen__background__shape3"></span>-->
+<!--			<span class="screen__background__shape screen__background__shape2"></span>-->
+<!--			<span class="screen__background__shape screen__background__shape1"></span>-->
+<!--		</div>-->
+    </div>
+</div>
+
+{% endblock %}

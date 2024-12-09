@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" action="/forgot-password" method="POST">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" name="email" id="email" placeholder="Email">
+				</div>
+				<button class="button login__submit">
+					<span class="button__text">Submit</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+				<div class="message">
+					<h1 style="color: {{ color }};">{{ message }}</h1>
+				</div>
+			</form>
+
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>
+	</div>
+</div>
+
+
+</html>
+

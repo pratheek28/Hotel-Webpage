@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+<style>
+table, th, td {
+  border:1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<a href="/render_roomCreator">
+    <button class="buttonAddRooms" >Add Rooms</button>
+</a>
+
+
+<div class="roomDisplay">
+    <table style="width: 50vw">
+      <tr>
+        <th>Room Number</th>
+        <th>Room Capacity</th>
+        <th>Availability</th>
+        <th>Price per night</th>
+        <th> </th>
+      </tr>
+      {% for info in data %}
+      <tr>
+          <td>{{ info[1] }}</td>
+          <td>{{ info[2] }}</td>
+          <td>{{ info[3] }}</td>
+          <td>{{ info[4] }}</td>
+          <td> <button > Book this room </button> </td>
+      </tr>
+      {% endfor %}
+    </table>
+</div>
+
+<p>{{ message }}</p>
+
+</html>
+
+<!--name="{{ loop.index }}" href="/bookRoom"-->

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+
+<form action="/otp" method="POST">
+    <label for="otp" id="otp_label">Enter the 6 number OTP that has been sent to you:</label>
+    <br>
+    <br>
+    <input type="text" name="otp" id="otp">
+    <input type="submit" id="submit" value="Submit OTP">
+    <input type="hidden" name="hidden_email" id="hidden_email" value="{{ email }}">
+    <input type="hidden" name="hidden_password" id="hidden_password" value="{{ password }}">
+    <input type="hidden" name="hidden_index" id="hidden_index" value="{{ index }}">
+    <input type="hidden" name="hidden_correct_otp" id="hidden_correct_otp" value="{{ correct_otp }}">
+    <input type="hidden" name="hidden_source" id="hidden_source" value="{{ source }}">
+    <input type="hidden" name="hidden_first_name" id="hidden_first_name" value="{{ first_name }}">
+    <input type="hidden" name="hidden_last_name" id="hidden_last_name" value="{{ last_name }}">
+
+</form>
+
+<h1>{{message}}</h1>
+
+{% endblock %}

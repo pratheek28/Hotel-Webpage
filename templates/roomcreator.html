@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+<form action="/roomData" method="POST">
+  <div>
+    <input type="text" name="occupants" id="occupants" placeholder="Enter number of occupants: ">
+  </div>
+
+  <div>
+    <input type="text" name="roomNum" id="roomNum" placeholder="Enter the room number: ">
+  </div>
+
+  <div>
+    <input type="text" name="rate" id="rate" placeholder="Enter the price per night: ">
+  </div>
+
+  <div>
+
+      <button>Submit!</button>
+
+  </div>
+</form>
+
+</html>
